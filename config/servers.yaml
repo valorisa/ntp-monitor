@@ -1,0 +1,10 @@
+ntp_servers:
+  - host: pool.ntp.org
+    weight: 0.6
+    stratum: 2
+  - host: time.google.com  
+    weight: 0.4
+    stratum: 1
+alerting:
+  offset_warning: 50   # ms
+  offset_critical: 100 # ms
